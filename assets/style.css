@@ -1,0 +1,227 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(img/webb.png);
+}
+
+/* css halaman index */
+
+.container {
+  background-color: blue;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+.container nav {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container nav a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.1s;
+  color: white;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.container nav a:hover {
+  text-shadow: 1px 1px 1px black;
+  transform: translate(2px, 2px);
+}
+
+.container nav .active {
+  transform: translate(2px, 2px);
+  text-shadow: 1px 1px 1px black;
+}
+
+.welcome {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* css cari */
+
+.cari {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.cari button {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* css untuk table */
+
+.table {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 95%;
+  margin: auto;
+}
+
+tr th {
+  background-color: yellowgreen;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+tr {
+  background-color: white;
+}
+
+tr td a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+tr td a:hover {
+  transform: scale(1.02);
+}
+
+tr td:nth-child(1),
+tr td:nth-child(2) {
+  text-align: center;
+}
+
+/* css halaman Admin */
+
+.table .tambah {
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  background-color: #0d6efd;
+  border-radius: 5px;
+  width: 25%;
+  color: white;
+  margin-bottom: 5px;
+  transition: 0.1s;
+}
+
+.table .tambah:hover {
+  transform: scale(1.02);
+}
+
+/* css halaman tambah admin */
+
+.tambah {
+  text-align: center;
+}
+
+.form-tambah {
+  width: 50%;
+  margin: auto;
+}
+
+.form-tambah form {
+  margin: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  display: flex;
+}
+
+.hapus {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.login ul li {
+  list-style: none;
+}
+
+.login {
+  width: 320;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 70px;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+}
+
+.login label {
+  display: flex;
+}
+
+.login h1 {
+  text-align: center;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.login ul li {
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+  padding-right: 35px;
+}
+
+.tombol {
+  background-color: blue;
+  color: white;
+  border: none;
+  outline: none;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tombol:hover {
+  background: #c4ddff;
+  color: white;
+}
+
+.logout {
+  position: relative;
+  left: 950px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
